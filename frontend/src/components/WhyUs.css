@@ -1,0 +1,60 @@
+.whyus-section {
+  background-color: #b5bdb5;
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.whyus-container {
+  width: 80%;
+}
+
+.whyus-section img {
+  width: 100%;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.8rem 0.8rem;
+  border-radius: 1.5rem;
+  margin-bottom: 4rem;
+  margin: 5rem 0;
+}
+
+.whyus-section .title {
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin: 3rem 0;
+  text-align: left;
+  font-size: 30px;
+}
+
+.whyus-section .heading {
+  font-weight: normal;
+}
+
+.whyus-section .info {
+  margin-top: 1.5rem;
+}
+.whyus-section .para {
+  font-size: 15px;
+}
+
+.whyus-section .number {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0.1rem solid var(--primary-color);
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  display: grid;
+  place-items: center;
+}
+
+.whyus-section .data {
+  padding-left: 2rem;
+}
+
+.whyus-section .data p {
+  margin: 1rem 0;
+}
+.whyus-section .whyus-section-button {
+  padding: 0rem;
+}

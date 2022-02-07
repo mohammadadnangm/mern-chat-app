@@ -1,0 +1,31 @@
+.aboutus-section {
+  background: #000;
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+}
+.aboutus-container {
+  width: 80%;
+}
+.aboutus-section .title {
+  color: aliceblue;
+}
+.aboutus-section .heading {
+  color: aliceblue;
+}
+
+.aboutus-section .description {
+  color: azure;
+  font-size: 15px;
+}
+
+/* 2nd section of about us  */
+.aboutus-section-rightside-img {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.aboutus-section img {
+  width: 100%;
+  height: 400px;
+}

@@ -3,7 +3,7 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
+  // ModalHeader,
   ModalFooter,
   ModalBody,
   ModalCloseButton,
@@ -24,19 +24,14 @@ const ProfileModal = ({ user, children }) => {
       ) : (
         <IconButton d={{ base: "flex" }} icon={<ViewIcon />} onClick={onOpen} />
       )}
-      <Modal size="lg" onClose={onClose} isOpen={isOpen} isCentered>
+      <Modal size="md" onClose={onClose} isOpen={isOpen} isCentered>
         <ModalOverlay />
-        <ModalContent h="410px">
-          <ModalHeader
-            fontSize="40px"
-            fontFamily="Work sans"
-            d="flex"
-            justifyContent="center"
-          >
-            {user.name}
-          </ModalHeader>
+        <ModalContent h="450px">
+          {user.name}
+          {/* <ModalHeader>{user.name}</ModalHeader> */}
           <ModalCloseButton />
           <ModalBody
+            mt="50px"
             d="flex"
             flexDir="column"
             alignItems="center"
