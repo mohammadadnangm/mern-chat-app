@@ -16,9 +16,9 @@ import io from "socket.io-client";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import { ChatState } from "../context/ChatProvider";
 // before deployement
-// const ENDPOINT = "http://localhost:5001";
+const ENDPOINT = "http://localhost:5001";
 //  After deployment
-const ENDPOINT = "https://quran-tutor-chat.herokuapp.com";
+// const ENDPOINT = "https://quran-tutor-chat.herokuapp.com";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
