@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("API Running!");
+  res.send("Backend API's are Running!");
 });
 
 app.use("/api/user", userRoutes);

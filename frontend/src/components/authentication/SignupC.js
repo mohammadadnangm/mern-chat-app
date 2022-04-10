@@ -3,6 +3,7 @@ import "./SignupC.css";
 import axios from "axios";
 import { Button } from "@chakra-ui/button";
 import { FormControl, FormLabel } from "@chakra-ui/form-control";
+import validator from "validator";
 import {
   Input,
   InputGroup,
@@ -18,7 +19,7 @@ const SignupC = () => {
   const handleClick = () => setShow(!show);
   const toast = useToast();
   const history = useHistory();
-
+  const [loading, setLoading] = useState(false);
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [confirmpassword, setConfirmpassword] = useState();
@@ -37,6 +38,17 @@ const SignupC = () => {
         position: "bottom",
       });
       setPicLoading(false);
+      return;
+    }
+    if (!validator.isEmail(email)) {
+      toast({
+        title: "Enter correct format of email",
+        status: "warning",
+        duration: 5000,
+        isClosable: true,
+        position: "bottom",
+      });
+      setLoading(false);
       return;
     }
     if (password !== confirmpassword) {

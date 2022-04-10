@@ -3,6 +3,7 @@ import "./LoginC.css";
 import axios from "axios";
 import { useToast } from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
+import validator from "validator";
 import {
   FormControl,
   FormLabel,
@@ -29,6 +30,17 @@ const LoginC = () => {
     if (!email || !password) {
       toast({
         title: "Please Fill all the Feilds",
+        status: "warning",
+        duration: 5000,
+        isClosable: true,
+        position: "bottom",
+      });
+      setLoading(false);
+      return;
+    }
+    if (!validator.isEmail(email)) {
+      toast({
+        title: "Enter correct format of email",
         status: "warning",
         duration: 5000,
         isClosable: true,
